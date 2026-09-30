@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: absoluteUrl('/'), lastModified: newest ? new Date(newest) : new Date(), changeFrequency: 'weekly', priority: 1 },
     { url: absoluteUrl('/contact'), lastModified: new Date('2026-09-27'), changeFrequency: 'yearly', priority: 0.5 },
+    { url: absoluteUrl('/privacy'), lastModified: new Date('2026-09-30'), changeFrequency: 'yearly', priority: 0.4 },
     ...ready.map((tool) => ({ url: absoluteUrl(`/tools/${tool.slug}`), lastModified: new Date(TOOL_RELEASE_DATES[tool.slug] ?? Date.now()), changeFrequency: 'monthly' as const, priority: 0.8 })),
   ]
 }

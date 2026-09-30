@@ -1,6 +1,12 @@
 import type { Metadata, Viewport } from 'next'
+import { Analytics } from '@/components/analytics'
+import { PrivacyConsent } from '@/components/privacy-consent'
+import { adsensePublisherId } from '@/lib/adsense'
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site'
 import './globals.css'
+
+const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() ?? ''
+const validAdsenseClient = adsensePublisherId(adsenseClient) !== null
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -21,5 +27,5 @@ export const viewport: Viewport = { themeColor: '#f8faff', width: 'device-width'
 const languageBootstrap = "try{var l=localStorage.getItem('tools:language');if(l==='en'||l==='tr'||l==='ru'){document.documentElement.lang=l}}catch(e){}"
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="tr" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: languageBootstrap }} /></head><body><div className="ambient-background" aria-hidden="true"><span/><span/><span/><i/><i/><i/></div>{children}</body></html>
+  return <html lang="tr" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: languageBootstrap }} />{validAdsenseClient && <meta name="google-adsense-account" content={adsenseClient} />}</head><body><div className="ambient-background" aria-hidden="true"><span/><span/><span/><i/><i/><i/></div>{children}<Analytics /><PrivacyConsent /></body></html>
 }
