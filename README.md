@@ -115,8 +115,11 @@ clears the referrer. GTM takes priority over direct GA to prevent duplicate inte
 Google may use cookies/device identifiers after consent; path sanitization does
 not make its processing anonymous.
 
-Ad slots are labelled and separate from calculator controls. They render only when
-the feature flag, publisher ID, slot ID and advertising consent are present.
+Ad slots are labelled and separate from calculator controls. With AdSense disabled,
+they open the visitor's mail app with an advertising inquiry addressed to
+`hello@mucahid.dev`; no email is sent automatically and no ad script loads.
+Google ad units render only when the feature flag, publisher ID, slot ID and
+advertising consent are present.
 `/ads.txt` publishes the configured publisher record, or returns 404 without one.
 Before enabling ads, finish AdSense account/site approval, configure the required
 Google-certified CMP and verify domain-level ads.txt requirements. This site's
@@ -139,5 +142,6 @@ Do not publish credentials, personal calculator inputs or private logs.
 
 ## License
 
-The source is public, but the owner has not yet selected a reuse license. Until a
-LICENSE file is added, public visibility does not grant an open-source license.
+Project code is available under the [MIT License](LICENSE). Third-party data,
+wordlists, assets and dependencies retain their own licenses and attribution;
+see [`src/data/SOURCES.md`](src/data/SOURCES.md) and the in-tool source notes.

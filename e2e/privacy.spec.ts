@@ -1,5 +1,22 @@
 import { expect, test } from '@playwright/test'
 
+test('advertising inquiries open a ready email without loading AdSense', async ({ page }) => {
+  await page.goto('/')
+  await page.getByRole('button', { name: 'Sadece gerekli' }).click()
+  const placement = page.getByRole('complementary', { name: 'Reklam' })
+  const link = placement.getByRole('link', { name: 'Buraya reklam ver' })
+  await expect(link).toBeVisible()
+  const href = new URL((await link.getAttribute('href'))!)
+  expect(href.protocol).toBe('mailto:')
+  expect(href.pathname).toBe('hello@mucahid.dev')
+  expect(href.searchParams.get('subject')).toContain('tools.mucahid.dev')
+  expect(href.searchParams.get('body')).toContain('https://tools.mucahid.dev')
+  await link.focus()
+  await expect(link).toBeFocused()
+  await expect(page.locator('script[src*="googlesyndication"],ins.adsbygoogle')).toHaveCount(0)
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0)
+})
+
 test('analytics waits for consent, excludes query values and stops after withdrawal', async ({ page }) => {
   const googleRequests: string[] = []
   await page.route(/googletagmanager\.com|google-analytics\.com|googlesyndication\.com/, async route => {

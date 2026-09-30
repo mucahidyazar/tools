@@ -49,6 +49,11 @@ export function AdSlot() {
       window.removeEventListener('storage', storageListener)
     }
   }, [allowed])
-  if (!READY || !allowed) return null
+  if (!READY) {
+    const subject = encodeURIComponent('tools.mucahid.dev — Reklam talebi')
+    const body = encodeURIComponent('Merhaba,\n\nhttps://tools.mucahid.dev üzerinde reklam vermek istiyorum.\n\nMarka / web sitesi:\nReklam süresi:\nMesaj:\n')
+    return <aside className="mx-auto mt-8 max-w-[728px] rounded-2xl border border-dashed border-[#dbe3f1] bg-[#fbfcfe] p-3 text-center" aria-label={t('Reklam', 'Advertisement', 'Реклама')}><a href={`mailto:hello@mucahid.dev?subject=${subject}&body=${body}`} className="focus-ring flex min-h-[90px] flex-col items-center justify-center gap-2 rounded-xl px-4 py-5 transition hover:bg-[#f0f4fb]"><span className="text-[.82rem] font-semibold text-[#365fbf]">{t('Buraya reklam ver', 'Advertise here', 'Разместить рекламу')}</span><span className="text-[.7rem] text-[#6d7b95]">{t('Reklam ve sponsorluk için e-posta gönder', 'Email us about advertising and sponsorship', 'Напишите нам о рекламе и спонсорстве')}</span></a></aside>
+  }
+  if (!allowed) return null
   return <aside className="mx-auto mt-8 max-w-[728px] rounded-2xl border border-[#edf0f5] bg-[#fbfcfe] px-3 py-3 text-center" aria-label={t('Reklam', 'Advertisement', 'Реклама')}><p className="mb-2 text-[.6rem] font-semibold uppercase tracking-[.14em] text-[#9aa5b8]">{t('Reklam', 'Advertisement', 'Реклама')}</p><ins ref={ref} className="adsbygoogle block min-h-[90px]" style={{ display: 'block' }} data-ad-client={CLIENT} data-ad-slot={SLOT} data-ad-format="auto" data-full-width-responsive="true" /></aside>
 }
