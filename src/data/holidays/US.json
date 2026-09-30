@@ -1,0 +1,682 @@
+{
+ "country": "US",
+ "source": "Nager.Date (https://date.nager.at), MIT licence",
+ "fetchedAt": "2026-09-27",
+ "years": {
+  "2025": [
+   {
+    "date": "2025-01-01",
+    "local": "New Year's Day",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2025-01-20",
+    "local": "Martin Luther King, Jr. Day",
+    "name": "Martin Luther King, Jr. Day"
+   },
+   {
+    "date": "2025-02-17",
+    "local": "Washington's Birthday",
+    "name": "Presidents Day"
+   },
+   {
+    "date": "2025-04-18",
+    "local": "Good Friday",
+    "name": "Good Friday",
+    "counties": [
+     "US-CT",
+     "US-DE",
+     "US-HI",
+     "US-IN",
+     "US-KY",
+     "US-LA",
+     "US-NC",
+     "US-ND",
+     "US-NJ",
+     "US-TN"
+    ]
+   },
+   {
+    "date": "2025-05-26",
+    "local": "Memorial Day",
+    "name": "Memorial Day"
+   },
+   {
+    "date": "2025-06-19",
+    "local": "Juneteenth National Independence Day",
+    "name": "Juneteenth National Independence Day"
+   },
+   {
+    "date": "2025-07-04",
+    "local": "Independence Day",
+    "name": "Independence Day"
+   },
+   {
+    "date": "2025-09-01",
+    "local": "Labor Day",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2025-10-13",
+    "local": "Columbus Day",
+    "name": "Columbus Day",
+    "counties": [
+     "US-AL",
+     "US-AZ",
+     "US-CO",
+     "US-CT",
+     "US-GA",
+     "US-IA",
+     "US-ID",
+     "US-IL",
+     "US-IN",
+     "US-KS",
+     "US-KY",
+     "US-LA",
+     "US-MA",
+     "US-MD",
+     "US-ME",
+     "US-MO",
+     "US-MS",
+     "US-MT",
+     "US-NC",
+     "US-NE",
+     "US-NH",
+     "US-NJ",
+     "US-NM",
+     "US-NY",
+     "US-OH",
+     "US-OK",
+     "US-PA",
+     "US-RI",
+     "US-SC",
+     "US-TN",
+     "US-UT",
+     "US-VA",
+     "US-WV"
+    ]
+   },
+   {
+    "date": "2025-10-13",
+    "local": "Indigenous Peoples' Day",
+    "name": "Indigenous Peoples' Day",
+    "counties": [
+     "US-AK",
+     "US-AL",
+     "US-CA",
+     "US-HI",
+     "US-IA",
+     "US-LA",
+     "US-ME",
+     "US-MI",
+     "US-MN",
+     "US-NC",
+     "US-NE",
+     "US-NM",
+     "US-OK",
+     "US-OR",
+     "US-SD",
+     "US-TX",
+     "US-VA",
+     "US-VT",
+     "US-WI"
+    ]
+   },
+   {
+    "date": "2025-11-11",
+    "local": "Veterans Day",
+    "name": "Veterans Day"
+   },
+   {
+    "date": "2025-11-27",
+    "local": "Thanksgiving Day",
+    "name": "Thanksgiving Day"
+   },
+   {
+    "date": "2025-12-25",
+    "local": "Christmas Day",
+    "name": "Christmas Day"
+   }
+  ],
+  "2026": [
+   {
+    "date": "2026-01-01",
+    "local": "New Year's Day",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2026-01-19",
+    "local": "Martin Luther King, Jr. Day",
+    "name": "Martin Luther King, Jr. Day"
+   },
+   {
+    "date": "2026-02-16",
+    "local": "Washington's Birthday",
+    "name": "Presidents Day"
+   },
+   {
+    "date": "2026-04-03",
+    "local": "Good Friday",
+    "name": "Good Friday",
+    "counties": [
+     "US-CT",
+     "US-DE",
+     "US-HI",
+     "US-IN",
+     "US-KY",
+     "US-LA",
+     "US-NC",
+     "US-ND",
+     "US-NJ",
+     "US-TN"
+    ]
+   },
+   {
+    "date": "2026-05-25",
+    "local": "Memorial Day",
+    "name": "Memorial Day"
+   },
+   {
+    "date": "2026-06-19",
+    "local": "Juneteenth National Independence Day",
+    "name": "Juneteenth National Independence Day"
+   },
+   {
+    "date": "2026-07-03",
+    "local": "Independence Day",
+    "name": "Independence Day"
+   },
+   {
+    "date": "2026-09-07",
+    "local": "Labor Day",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2026-10-12",
+    "local": "Columbus Day",
+    "name": "Columbus Day",
+    "counties": [
+     "US-AL",
+     "US-AZ",
+     "US-CO",
+     "US-CT",
+     "US-GA",
+     "US-IA",
+     "US-ID",
+     "US-IL",
+     "US-IN",
+     "US-KS",
+     "US-KY",
+     "US-LA",
+     "US-MA",
+     "US-MD",
+     "US-ME",
+     "US-MO",
+     "US-MS",
+     "US-MT",
+     "US-NC",
+     "US-NE",
+     "US-NH",
+     "US-NJ",
+     "US-NM",
+     "US-NY",
+     "US-OH",
+     "US-OK",
+     "US-PA",
+     "US-RI",
+     "US-SC",
+     "US-TN",
+     "US-UT",
+     "US-VA",
+     "US-WV"
+    ]
+   },
+   {
+    "date": "2026-10-12",
+    "local": "Indigenous Peoples' Day",
+    "name": "Indigenous Peoples' Day",
+    "counties": [
+     "US-AK",
+     "US-AL",
+     "US-CA",
+     "US-HI",
+     "US-IA",
+     "US-LA",
+     "US-ME",
+     "US-MI",
+     "US-MN",
+     "US-NC",
+     "US-NE",
+     "US-NM",
+     "US-OK",
+     "US-OR",
+     "US-SD",
+     "US-TX",
+     "US-VA",
+     "US-VT",
+     "US-WI"
+    ]
+   },
+   {
+    "date": "2026-11-11",
+    "local": "Veterans Day",
+    "name": "Veterans Day"
+   },
+   {
+    "date": "2026-11-26",
+    "local": "Thanksgiving Day",
+    "name": "Thanksgiving Day"
+   },
+   {
+    "date": "2026-12-25",
+    "local": "Christmas Day",
+    "name": "Christmas Day"
+   }
+  ],
+  "2027": [
+   {
+    "date": "2027-01-01",
+    "local": "New Year's Day",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2027-01-18",
+    "local": "Martin Luther King, Jr. Day",
+    "name": "Martin Luther King, Jr. Day"
+   },
+   {
+    "date": "2027-02-15",
+    "local": "Washington's Birthday",
+    "name": "Presidents Day"
+   },
+   {
+    "date": "2027-03-26",
+    "local": "Good Friday",
+    "name": "Good Friday",
+    "counties": [
+     "US-CT",
+     "US-DE",
+     "US-HI",
+     "US-IN",
+     "US-KY",
+     "US-LA",
+     "US-NC",
+     "US-ND",
+     "US-NJ",
+     "US-TN"
+    ]
+   },
+   {
+    "date": "2027-05-31",
+    "local": "Memorial Day",
+    "name": "Memorial Day"
+   },
+   {
+    "date": "2027-06-18",
+    "local": "Juneteenth National Independence Day",
+    "name": "Juneteenth National Independence Day"
+   },
+   {
+    "date": "2027-07-05",
+    "local": "Independence Day",
+    "name": "Independence Day"
+   },
+   {
+    "date": "2027-09-06",
+    "local": "Labor Day",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2027-10-11",
+    "local": "Columbus Day",
+    "name": "Columbus Day",
+    "counties": [
+     "US-AL",
+     "US-AZ",
+     "US-CO",
+     "US-CT",
+     "US-GA",
+     "US-IA",
+     "US-ID",
+     "US-IL",
+     "US-IN",
+     "US-KS",
+     "US-KY",
+     "US-LA",
+     "US-MA",
+     "US-MD",
+     "US-ME",
+     "US-MO",
+     "US-MS",
+     "US-MT",
+     "US-NC",
+     "US-NE",
+     "US-NH",
+     "US-NJ",
+     "US-NM",
+     "US-NY",
+     "US-OH",
+     "US-OK",
+     "US-PA",
+     "US-RI",
+     "US-SC",
+     "US-TN",
+     "US-UT",
+     "US-VA",
+     "US-WV"
+    ]
+   },
+   {
+    "date": "2027-10-11",
+    "local": "Indigenous Peoples' Day",
+    "name": "Indigenous Peoples' Day",
+    "counties": [
+     "US-AK",
+     "US-AL",
+     "US-CA",
+     "US-HI",
+     "US-IA",
+     "US-LA",
+     "US-ME",
+     "US-MI",
+     "US-MN",
+     "US-NC",
+     "US-NE",
+     "US-NM",
+     "US-OK",
+     "US-OR",
+     "US-SD",
+     "US-TX",
+     "US-VA",
+     "US-VT",
+     "US-WI"
+    ]
+   },
+   {
+    "date": "2027-11-11",
+    "local": "Veterans Day",
+    "name": "Veterans Day"
+   },
+   {
+    "date": "2027-11-25",
+    "local": "Thanksgiving Day",
+    "name": "Thanksgiving Day"
+   },
+   {
+    "date": "2027-12-24",
+    "local": "Christmas Day",
+    "name": "Christmas Day"
+   }
+  ],
+  "2028": [
+   {
+    "date": "2027-12-31",
+    "local": "New Year's Day",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2028-01-17",
+    "local": "Martin Luther King, Jr. Day",
+    "name": "Martin Luther King, Jr. Day"
+   },
+   {
+    "date": "2028-02-21",
+    "local": "Washington's Birthday",
+    "name": "Presidents Day"
+   },
+   {
+    "date": "2028-04-14",
+    "local": "Good Friday",
+    "name": "Good Friday",
+    "counties": [
+     "US-CT",
+     "US-DE",
+     "US-HI",
+     "US-IN",
+     "US-KY",
+     "US-LA",
+     "US-NC",
+     "US-ND",
+     "US-NJ",
+     "US-TN"
+    ]
+   },
+   {
+    "date": "2028-05-29",
+    "local": "Memorial Day",
+    "name": "Memorial Day"
+   },
+   {
+    "date": "2028-06-19",
+    "local": "Juneteenth National Independence Day",
+    "name": "Juneteenth National Independence Day"
+   },
+   {
+    "date": "2028-07-04",
+    "local": "Independence Day",
+    "name": "Independence Day"
+   },
+   {
+    "date": "2028-09-04",
+    "local": "Labor Day",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2028-10-09",
+    "local": "Columbus Day",
+    "name": "Columbus Day",
+    "counties": [
+     "US-AL",
+     "US-AZ",
+     "US-CO",
+     "US-CT",
+     "US-GA",
+     "US-IA",
+     "US-ID",
+     "US-IL",
+     "US-IN",
+     "US-KS",
+     "US-KY",
+     "US-LA",
+     "US-MA",
+     "US-MD",
+     "US-ME",
+     "US-MO",
+     "US-MS",
+     "US-MT",
+     "US-NC",
+     "US-NE",
+     "US-NH",
+     "US-NJ",
+     "US-NM",
+     "US-NY",
+     "US-OH",
+     "US-OK",
+     "US-PA",
+     "US-RI",
+     "US-SC",
+     "US-TN",
+     "US-UT",
+     "US-VA",
+     "US-WV"
+    ]
+   },
+   {
+    "date": "2028-10-09",
+    "local": "Indigenous Peoples' Day",
+    "name": "Indigenous Peoples' Day",
+    "counties": [
+     "US-AK",
+     "US-AL",
+     "US-CA",
+     "US-HI",
+     "US-IA",
+     "US-LA",
+     "US-ME",
+     "US-MI",
+     "US-MN",
+     "US-NC",
+     "US-NE",
+     "US-NM",
+     "US-OK",
+     "US-OR",
+     "US-SD",
+     "US-TX",
+     "US-VA",
+     "US-VT",
+     "US-WI"
+    ]
+   },
+   {
+    "date": "2028-11-10",
+    "local": "Veterans Day",
+    "name": "Veterans Day"
+   },
+   {
+    "date": "2028-11-23",
+    "local": "Thanksgiving Day",
+    "name": "Thanksgiving Day"
+   },
+   {
+    "date": "2028-12-25",
+    "local": "Christmas Day",
+    "name": "Christmas Day"
+   }
+  ],
+  "2029": [
+   {
+    "date": "2029-01-01",
+    "local": "New Year's Day",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2029-01-15",
+    "local": "Martin Luther King, Jr. Day",
+    "name": "Martin Luther King, Jr. Day"
+   },
+   {
+    "date": "2029-02-19",
+    "local": "Washington's Birthday",
+    "name": "Presidents Day"
+   },
+   {
+    "date": "2029-03-30",
+    "local": "Good Friday",
+    "name": "Good Friday",
+    "counties": [
+     "US-CT",
+     "US-DE",
+     "US-HI",
+     "US-IN",
+     "US-KY",
+     "US-LA",
+     "US-NC",
+     "US-ND",
+     "US-NJ",
+     "US-TN"
+    ]
+   },
+   {
+    "date": "2029-05-28",
+    "local": "Memorial Day",
+    "name": "Memorial Day"
+   },
+   {
+    "date": "2029-06-19",
+    "local": "Juneteenth National Independence Day",
+    "name": "Juneteenth National Independence Day"
+   },
+   {
+    "date": "2029-07-04",
+    "local": "Independence Day",
+    "name": "Independence Day"
+   },
+   {
+    "date": "2029-09-03",
+    "local": "Labor Day",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2029-10-08",
+    "local": "Columbus Day",
+    "name": "Columbus Day",
+    "counties": [
+     "US-AL",
+     "US-AZ",
+     "US-CO",
+     "US-CT",
+     "US-GA",
+     "US-IA",
+     "US-ID",
+     "US-IL",
+     "US-IN",
+     "US-KS",
+     "US-KY",
+     "US-LA",
+     "US-MA",
+     "US-MD",
+     "US-ME",
+     "US-MO",
+     "US-MS",
+     "US-MT",
+     "US-NC",
+     "US-NE",
+     "US-NH",
+     "US-NJ",
+     "US-NM",
+     "US-NY",
+     "US-OH",
+     "US-OK",
+     "US-PA",
+     "US-RI",
+     "US-SC",
+     "US-TN",
+     "US-UT",
+     "US-VA",
+     "US-WV"
+    ]
+   },
+   {
+    "date": "2029-10-08",
+    "local": "Indigenous Peoples' Day",
+    "name": "Indigenous Peoples' Day",
+    "counties": [
+     "US-AK",
+     "US-AL",
+     "US-CA",
+     "US-HI",
+     "US-IA",
+     "US-LA",
+     "US-ME",
+     "US-MI",
+     "US-MN",
+     "US-NC",
+     "US-NE",
+     "US-NM",
+     "US-OK",
+     "US-OR",
+     "US-SD",
+     "US-TX",
+     "US-VA",
+     "US-VT",
+     "US-WI"
+    ]
+   },
+   {
+    "date": "2029-11-12",
+    "local": "Veterans Day",
+    "name": "Veterans Day"
+   },
+   {
+    "date": "2029-11-22",
+    "local": "Thanksgiving Day",
+    "name": "Thanksgiving Day"
+   },
+   {
+    "date": "2029-12-25",
+    "local": "Christmas Day",
+    "name": "Christmas Day"
+   }
+  ]
+ }
+}

@@ -1,0 +1,292 @@
+{
+ "country": "FR",
+ "source": "Nager.Date (https://date.nager.at), MIT licence",
+ "fetchedAt": "2026-09-27",
+ "years": {
+  "2025": [
+   {
+    "date": "2025-01-01",
+    "local": "Jour de l'an",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2025-04-21",
+    "local": "Lundi de Pâques",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2025-05-01",
+    "local": "Fête du Travail",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2025-05-08",
+    "local": "Victoire 1945",
+    "name": "Victory in Europe Day"
+   },
+   {
+    "date": "2025-05-29",
+    "local": "Ascension",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2025-06-09",
+    "local": "Lundi de Pentecôte",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2025-07-14",
+    "local": "Fête nationale",
+    "name": "Bastille Day"
+   },
+   {
+    "date": "2025-08-15",
+    "local": "Assomption",
+    "name": "Assumption Day"
+   },
+   {
+    "date": "2025-11-01",
+    "local": "Toussaint",
+    "name": "All Saints' Day"
+   },
+   {
+    "date": "2025-11-11",
+    "local": "Armistice 1918",
+    "name": "Armistice Day"
+   },
+   {
+    "date": "2025-12-25",
+    "local": "Noël",
+    "name": "Christmas Day"
+   }
+  ],
+  "2026": [
+   {
+    "date": "2026-01-01",
+    "local": "Jour de l'an",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2026-04-06",
+    "local": "Lundi de Pâques",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2026-05-01",
+    "local": "Fête du Travail",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2026-05-08",
+    "local": "Victoire 1945",
+    "name": "Victory in Europe Day"
+   },
+   {
+    "date": "2026-05-14",
+    "local": "Ascension",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2026-05-25",
+    "local": "Lundi de Pentecôte",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2026-07-14",
+    "local": "Fête nationale",
+    "name": "Bastille Day"
+   },
+   {
+    "date": "2026-08-15",
+    "local": "Assomption",
+    "name": "Assumption Day"
+   },
+   {
+    "date": "2026-11-01",
+    "local": "Toussaint",
+    "name": "All Saints' Day"
+   },
+   {
+    "date": "2026-11-11",
+    "local": "Armistice 1918",
+    "name": "Armistice Day"
+   },
+   {
+    "date": "2026-12-25",
+    "local": "Noël",
+    "name": "Christmas Day"
+   }
+  ],
+  "2027": [
+   {
+    "date": "2027-01-01",
+    "local": "Jour de l'an",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2027-03-29",
+    "local": "Lundi de Pâques",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2027-05-01",
+    "local": "Fête du Travail",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2027-05-06",
+    "local": "Ascension",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2027-05-08",
+    "local": "Victoire 1945",
+    "name": "Victory in Europe Day"
+   },
+   {
+    "date": "2027-05-17",
+    "local": "Lundi de Pentecôte",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2027-07-14",
+    "local": "Fête nationale",
+    "name": "Bastille Day"
+   },
+   {
+    "date": "2027-08-15",
+    "local": "Assomption",
+    "name": "Assumption Day"
+   },
+   {
+    "date": "2027-11-01",
+    "local": "Toussaint",
+    "name": "All Saints' Day"
+   },
+   {
+    "date": "2027-11-11",
+    "local": "Armistice 1918",
+    "name": "Armistice Day"
+   },
+   {
+    "date": "2027-12-25",
+    "local": "Noël",
+    "name": "Christmas Day"
+   }
+  ],
+  "2028": [
+   {
+    "date": "2028-01-01",
+    "local": "Jour de l'an",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2028-04-17",
+    "local": "Lundi de Pâques",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2028-05-01",
+    "local": "Fête du Travail",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2028-05-08",
+    "local": "Victoire 1945",
+    "name": "Victory in Europe Day"
+   },
+   {
+    "date": "2028-05-25",
+    "local": "Ascension",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2028-06-05",
+    "local": "Lundi de Pentecôte",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2028-07-14",
+    "local": "Fête nationale",
+    "name": "Bastille Day"
+   },
+   {
+    "date": "2028-08-15",
+    "local": "Assomption",
+    "name": "Assumption Day"
+   },
+   {
+    "date": "2028-11-01",
+    "local": "Toussaint",
+    "name": "All Saints' Day"
+   },
+   {
+    "date": "2028-11-11",
+    "local": "Armistice 1918",
+    "name": "Armistice Day"
+   },
+   {
+    "date": "2028-12-25",
+    "local": "Noël",
+    "name": "Christmas Day"
+   }
+  ],
+  "2029": [
+   {
+    "date": "2029-01-01",
+    "local": "Jour de l'an",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2029-04-02",
+    "local": "Lundi de Pâques",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2029-05-01",
+    "local": "Fête du Travail",
+    "name": "Labour Day"
+   },
+   {
+    "date": "2029-05-08",
+    "local": "Victoire 1945",
+    "name": "Victory in Europe Day"
+   },
+   {
+    "date": "2029-05-10",
+    "local": "Ascension",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2029-05-21",
+    "local": "Lundi de Pentecôte",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2029-07-14",
+    "local": "Fête nationale",
+    "name": "Bastille Day"
+   },
+   {
+    "date": "2029-08-15",
+    "local": "Assomption",
+    "name": "Assumption Day"
+   },
+   {
+    "date": "2029-11-01",
+    "local": "Toussaint",
+    "name": "All Saints' Day"
+   },
+   {
+    "date": "2029-11-11",
+    "local": "Armistice 1918",
+    "name": "Armistice Day"
+   },
+   {
+    "date": "2029-12-25",
+    "local": "Noël",
+    "name": "Christmas Day"
+   }
+  ]
+ }
+}

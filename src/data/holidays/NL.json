@@ -1,0 +1,242 @@
+{
+ "country": "NL",
+ "source": "Nager.Date (https://date.nager.at), MIT licence",
+ "fetchedAt": "2026-09-27",
+ "years": {
+  "2025": [
+   {
+    "date": "2025-01-01",
+    "local": "Nieuwjaarsdag",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2025-04-20",
+    "local": "Eerste Paasdag",
+    "name": "Easter Sunday"
+   },
+   {
+    "date": "2025-04-21",
+    "local": "Tweede Paasdag",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2025-04-26",
+    "local": "Koningsdag",
+    "name": "King's Day"
+   },
+   {
+    "date": "2025-05-29",
+    "local": "Hemelvaartsdag",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2025-06-08",
+    "local": "Eerste Pinksterdag",
+    "name": "Pentecost"
+   },
+   {
+    "date": "2025-06-09",
+    "local": "Tweede Pinksterdag",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2025-12-25",
+    "local": "Eerste Kerstdag",
+    "name": "Christmas Day"
+   },
+   {
+    "date": "2025-12-26",
+    "local": "Tweede Kerstdag",
+    "name": "St. Stephen's Day"
+   }
+  ],
+  "2026": [
+   {
+    "date": "2026-01-01",
+    "local": "Nieuwjaarsdag",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2026-04-05",
+    "local": "Eerste Paasdag",
+    "name": "Easter Sunday"
+   },
+   {
+    "date": "2026-04-06",
+    "local": "Tweede Paasdag",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2026-04-27",
+    "local": "Koningsdag",
+    "name": "King's Day"
+   },
+   {
+    "date": "2026-05-14",
+    "local": "Hemelvaartsdag",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2026-05-24",
+    "local": "Eerste Pinksterdag",
+    "name": "Pentecost"
+   },
+   {
+    "date": "2026-05-25",
+    "local": "Tweede Pinksterdag",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2026-12-25",
+    "local": "Eerste Kerstdag",
+    "name": "Christmas Day"
+   },
+   {
+    "date": "2026-12-26",
+    "local": "Tweede Kerstdag",
+    "name": "St. Stephen's Day"
+   }
+  ],
+  "2027": [
+   {
+    "date": "2027-01-01",
+    "local": "Nieuwjaarsdag",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2027-03-28",
+    "local": "Eerste Paasdag",
+    "name": "Easter Sunday"
+   },
+   {
+    "date": "2027-03-29",
+    "local": "Tweede Paasdag",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2027-04-27",
+    "local": "Koningsdag",
+    "name": "King's Day"
+   },
+   {
+    "date": "2027-05-06",
+    "local": "Hemelvaartsdag",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2027-05-16",
+    "local": "Eerste Pinksterdag",
+    "name": "Pentecost"
+   },
+   {
+    "date": "2027-05-17",
+    "local": "Tweede Pinksterdag",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2027-12-25",
+    "local": "Eerste Kerstdag",
+    "name": "Christmas Day"
+   },
+   {
+    "date": "2027-12-26",
+    "local": "Tweede Kerstdag",
+    "name": "St. Stephen's Day"
+   }
+  ],
+  "2028": [
+   {
+    "date": "2028-01-01",
+    "local": "Nieuwjaarsdag",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2028-04-16",
+    "local": "Eerste Paasdag",
+    "name": "Easter Sunday"
+   },
+   {
+    "date": "2028-04-17",
+    "local": "Tweede Paasdag",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2028-04-27",
+    "local": "Koningsdag",
+    "name": "King's Day"
+   },
+   {
+    "date": "2028-05-25",
+    "local": "Hemelvaartsdag",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2028-06-04",
+    "local": "Eerste Pinksterdag",
+    "name": "Pentecost"
+   },
+   {
+    "date": "2028-06-05",
+    "local": "Tweede Pinksterdag",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2028-12-25",
+    "local": "Eerste Kerstdag",
+    "name": "Christmas Day"
+   },
+   {
+    "date": "2028-12-26",
+    "local": "Tweede Kerstdag",
+    "name": "St. Stephen's Day"
+   }
+  ],
+  "2029": [
+   {
+    "date": "2029-01-01",
+    "local": "Nieuwjaarsdag",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2029-04-01",
+    "local": "Eerste Paasdag",
+    "name": "Easter Sunday"
+   },
+   {
+    "date": "2029-04-02",
+    "local": "Tweede Paasdag",
+    "name": "Easter Monday"
+   },
+   {
+    "date": "2029-04-27",
+    "local": "Koningsdag",
+    "name": "King's Day"
+   },
+   {
+    "date": "2029-05-10",
+    "local": "Hemelvaartsdag",
+    "name": "Ascension Day"
+   },
+   {
+    "date": "2029-05-20",
+    "local": "Eerste Pinksterdag",
+    "name": "Pentecost"
+   },
+   {
+    "date": "2029-05-21",
+    "local": "Tweede Pinksterdag",
+    "name": "Whit Monday"
+   },
+   {
+    "date": "2029-12-25",
+    "local": "Eerste Kerstdag",
+    "name": "Christmas Day"
+   },
+   {
+    "date": "2029-12-26",
+    "local": "Tweede Kerstdag",
+    "name": "St. Stephen's Day"
+   }
+  ]
+ }
+}

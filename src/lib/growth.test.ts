@@ -1,0 +1,108 @@
+import assert from 'node:assert/strict'
+import test from 'node:test'
+import { adjustGrowthForInflation, effectiveAnnualRate, monthlyGrowthFactor, projectGrowth, type GrowthInput } from './growth'
+
+const base: GrowthInput = { initial: 10_000, contribution: 0, contributionFrequency: 'monthly', annualRatePercent: 12, rateKind: 'apr', compounding: 'monthly', months: 12, timing: 'end' }
+
+test('APR compounding and APY produce the textbook balances', () => {
+  const monthly = projectGrowth(base)
+  assert.ok(Math.abs(monthly.finalValue - 11_268.25) < 0.01, `monthly gave ${monthly.finalValue}`)
+  assert.ok(Math.abs(monthly.effectiveAnnualPercent - 12.6825) < 0.001)
+  const apy = projectGrowth({ ...base, rateKind: 'apy' })
+  assert.ok(Math.abs(apy.finalValue - 11_200) < 0.01, `apy gave ${apy.finalValue}`)
+  const yearly = projectGrowth({ ...base, compounding: 'yearly' })
+  assert.ok(Math.abs(yearly.finalValue - 11_200) < 0.01)
+  const daily = projectGrowth({ ...base, compounding: 'daily' })
+  assert.ok(Math.abs(effectiveAnnualRate(12, 'apr', 'daily') - 0.127475) < 1e-5)
+  assert.ok(daily.finalValue > monthly.finalValue)
+  assert.equal(monthlyGrowthFactor(0, 'apr', 'monthly'), 1)
+  assert.equal(monthly.path.length, 12)
+  assert.equal(monthly.yearly.length, 1)
+})
+
+test('contributions respect timing and frequency', () => {
+  const zeroRate = projectGrowth({ ...base, annualRatePercent: 0, contribution: 100 })
+  assert.equal(zeroRate.principal, 11_200)
+  assert.equal(zeroRate.contributions, 1_200)
+  assert.ok(Math.abs(zeroRate.gain) < 1e-9)
+  const atStart = projectGrowth({ ...base, contribution: 100, timing: 'start' })
+  const atEnd = projectGrowth({ ...base, contribution: 100, timing: 'end' })
+  assert.ok(atStart.finalValue > atEnd.finalValue)
+  assert.equal(atStart.principal, atEnd.principal)
+  const yearlyStart = projectGrowth({ ...base, contribution: 1_200, contributionFrequency: 'yearly', timing: 'start', months: 24 })
+  assert.equal(yearlyStart.contributions, 2_400)
+  assert.equal(yearlyStart.path[0].contribution, 1_200)
+  assert.equal(yearlyStart.path[12].contribution, 1_200)
+  const yearlyEnd = projectGrowth({ ...base, contribution: 1_200, contributionFrequency: 'yearly', timing: 'end', months: 24 })
+  assert.equal(yearlyEnd.path[11].contribution, 1_200)
+  assert.equal(yearlyEnd.path[23].contribution, 1_200)
+  assert.equal(yearlyEnd.yearly.length, 2)
+  assert.ok(Math.abs(yearlyEnd.yearly[1].closing - yearlyEnd.finalValue) < 1e-9)
+})
+
+test('inputs are normalised and summaries stay consistent', () => {
+  const result = projectGrowth({ ...base, initial: NaN, contribution: -5, months: 0.4, annualRatePercent: 5_000 })
+  assert.equal(result.input.initial, 0)
+  assert.equal(result.input.contribution, 0)
+  assert.equal(result.input.months, 1)
+  assert.equal(result.input.annualRatePercent, 1000)
+  const long = projectGrowth({ ...base, contribution: 250, months: 30 })
+  assert.equal(long.yearly.length, 3)
+  assert.equal(long.yearly[2].months, 6)
+  assert.ok(Math.abs(long.yearly.reduce((sum, year) => sum + year.contributions, 0) - long.contributions) < 1e-9)
+  assert.ok(Math.abs(long.yearly.reduce((sum, year) => sum + year.interest, 0) - long.gain) < 1e-6)
+  assert.ok(long.doublingYears! > 5 && long.doublingYears! < 6)
+  assert.equal(projectGrowth({ ...base, annualRatePercent: 0 }).doublingYears, null)
+})
+
+test('inflation restates the projection in start-date purchasing power', () => {
+  const nominal = projectGrowth({ ...base, contribution: 100, months: 36, rateKind: 'apy', annualRatePercent: 10 })
+  const flat = adjustGrowthForInflation(nominal, 0)
+  assert.equal(flat.realFinalValue, nominal.finalValue)
+  assert.equal(flat.realPrincipal, nominal.principal)
+  assert.equal(flat.inflationLoss, 0)
+  // Money growing exactly at the inflation rate keeps its purchasing power, whatever the contribution timing or frequency.
+  for (const timing of ['start', 'end'] as const) {
+    for (const contributionFrequency of ['monthly', 'yearly'] as const) {
+      const matched = adjustGrowthForInflation(projectGrowth({ ...base, contribution: 100, months: 36, rateKind: 'apy', annualRatePercent: 10, timing, contributionFrequency }), 10)
+      assert.ok(Math.abs(matched.realGain) < 1e-6, `${timing}/${contributionFrequency} gave ${matched.realGain}`)
+      assert.ok(Math.abs(matched.realAnnualPercent) < 1e-9)
+      assert.ok(Math.abs(matched.realReturnPercent) < 1e-9)
+    }
+  }
+  const idle = projectGrowth({ ...base, annualRatePercent: 0, contribution: 100, months: 24 })
+  const cash = adjustGrowthForInflation(idle, 20)
+  assert.ok(cash.realGain < 0 && cash.inflationLoss > 0, 'idle cash loses purchasing power')
+  assert.ok(Math.abs(cash.realFinalValue * 1.2 ** 2 - idle.finalValue) < 1e-6)
+  assert.ok(Math.abs(cash.realFinalValue - cash.path[cash.path.length - 1].realValue) < 1e-9)
+  assert.equal(cash.yearly.length, 2)
+  assert.ok(Math.abs(cash.yearly[1].realClosing - cash.realFinalValue) < 1e-9)
+  assert.ok(Math.abs(cash.yearly[1].inflationLoss - cash.inflationLoss) < 1e-9)
+  assert.ok(Math.abs(cash.yearly[0].inflationLoss - (idle.yearly[0].closing - cash.yearly[0].realClosing)) < 1e-9)
+  const fisher = adjustGrowthForInflation(projectGrowth({ ...base, rateKind: 'apy', annualRatePercent: 21 }), 10)
+  assert.ok(Math.abs(fisher.realAnnualPercent - 10) < 1e-9, '1.21 / 1.10 = 1.10')
+  assert.ok(Math.abs(fisher.realFinalValue - 11_000) < 1e-6)
+  assert.equal(adjustGrowthForInflation(idle, NaN).inflationPercent, 0)
+  assert.equal(adjustGrowthForInflation(idle, -500).inflationPercent, -99)
+})
+
+test('contributions in another currency follow the expected exchange-rate path', () => {
+  const flat = projectGrowth({ ...base, annualRatePercent: 0, contribution: 100, months: 24, conversion: { startRate: 40, annualChangePercent: 0 } })
+  assert.equal(flat.contributionsForeign, 2_400)
+  assert.equal(flat.contributions, 96_000)
+  assert.equal(flat.endRate, 40)
+  assert.ok(flat.path.every((point) => point.rate === 40 && point.contributionForeign === 100))
+  const rising = projectGrowth({ ...base, annualRatePercent: 0, contribution: 100, months: 24, timing: 'end', conversion: { startRate: 40, annualChangePercent: 25 } })
+  assert.ok(Math.abs(rising.path[11].contribution - 100 * 40 * 1.25) < 1e-9, 'the 12th end-of-month payment is converted at the rate one year on')
+  assert.ok(Math.abs(rising.endRate - 40 * 1.25 ** 2) < 1e-9)
+  assert.ok(rising.contributions > flat.contributions)
+  assert.equal(rising.yearly[1].contributionsForeign, 1_200)
+  const startTiming = projectGrowth({ ...base, annualRatePercent: 0, contribution: 100, months: 24, timing: 'start', conversion: { startRate: 40, annualChangePercent: 25 } })
+  assert.ok(Math.abs(startTiming.path[12].contribution - 100 * 40 * 1.25) < 1e-9, 'a start-of-month payment in month 13 is paid twelve months in')
+  assert.ok(Math.abs(startTiming.path[0].contribution - 4_000) < 1e-9)
+  const plain = projectGrowth({ ...base, contribution: 100, months: 6 })
+  assert.equal(plain.endRate, 1)
+  assert.equal(plain.contributionsForeign, plain.contributions)
+  assert.equal(projectGrowth({ ...base, contribution: 100, months: 6, conversion: { startRate: 0, annualChangePercent: 5 } }).input.conversion, undefined)
+  assert.equal(projectGrowth({ ...base, contribution: 100, months: 6, conversion: { startRate: 40, annualChangePercent: -500 } }).input.conversion!.annualChangePercent, -99)
+})

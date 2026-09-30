@@ -1,0 +1,342 @@
+{
+ "country": "KZ",
+ "source": "Nager.Date (https://date.nager.at), MIT licence",
+ "fetchedAt": "2026-09-27",
+ "years": {
+  "2025": [
+   {
+    "date": "2025-01-01",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2025-01-02",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2025-03-08",
+    "local": "Халықаралық әйелдер күні",
+    "name": "International Women's Day"
+   },
+   {
+    "date": "2025-03-21",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2025-03-22",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2025-03-23",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2025-05-01",
+    "local": "Қазақстан халқының",
+    "name": "Kazakhstan People's Unity Day"
+   },
+   {
+    "date": "2025-05-07",
+    "local": "Отан Қорғаушы күні",
+    "name": "Defender of the Fatherland Day"
+   },
+   {
+    "date": "2025-05-09",
+    "local": "Жеңіс күні",
+    "name": "Great Patriotic War Against Fascism Victory Day"
+   },
+   {
+    "date": "2025-07-06",
+    "local": "Астана күні",
+    "name": "Capital City Day"
+   },
+   {
+    "date": "2025-08-30",
+    "local": "Конституция күні",
+    "name": "Constitution Day"
+   },
+   {
+    "date": "2025-10-25",
+    "local": "Республика күні",
+    "name": "Republic Day"
+   },
+   {
+    "date": "2025-12-16",
+    "local": "Тәуелсіздік күні",
+    "name": "Independence Day"
+   }
+  ],
+  "2026": [
+   {
+    "date": "2026-01-01",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2026-01-02",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2026-03-08",
+    "local": "Халықаралық әйелдер күні",
+    "name": "International Women's Day"
+   },
+   {
+    "date": "2026-03-21",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2026-03-22",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2026-03-23",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2026-05-01",
+    "local": "Қазақстан халқының",
+    "name": "Kazakhstan People's Unity Day"
+   },
+   {
+    "date": "2026-05-07",
+    "local": "Отан Қорғаушы күні",
+    "name": "Defender of the Fatherland Day"
+   },
+   {
+    "date": "2026-05-09",
+    "local": "Жеңіс күні",
+    "name": "Great Patriotic War Against Fascism Victory Day"
+   },
+   {
+    "date": "2026-07-06",
+    "local": "Астана күні",
+    "name": "Capital City Day"
+   },
+   {
+    "date": "2026-08-30",
+    "local": "Конституция күні",
+    "name": "Constitution Day"
+   },
+   {
+    "date": "2026-10-25",
+    "local": "Республика күні",
+    "name": "Republic Day"
+   },
+   {
+    "date": "2026-12-16",
+    "local": "Тәуелсіздік күні",
+    "name": "Independence Day"
+   }
+  ],
+  "2027": [
+   {
+    "date": "2027-01-01",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2027-01-02",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2027-03-08",
+    "local": "Халықаралық әйелдер күні",
+    "name": "International Women's Day"
+   },
+   {
+    "date": "2027-03-21",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2027-03-22",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2027-03-23",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2027-05-01",
+    "local": "Қазақстан халқының",
+    "name": "Kazakhstan People's Unity Day"
+   },
+   {
+    "date": "2027-05-07",
+    "local": "Отан Қорғаушы күні",
+    "name": "Defender of the Fatherland Day"
+   },
+   {
+    "date": "2027-05-09",
+    "local": "Жеңіс күні",
+    "name": "Great Patriotic War Against Fascism Victory Day"
+   },
+   {
+    "date": "2027-07-06",
+    "local": "Астана күні",
+    "name": "Capital City Day"
+   },
+   {
+    "date": "2027-08-30",
+    "local": "Конституция күні",
+    "name": "Constitution Day"
+   },
+   {
+    "date": "2027-10-25",
+    "local": "Республика күні",
+    "name": "Republic Day"
+   },
+   {
+    "date": "2027-12-16",
+    "local": "Тәуелсіздік күні",
+    "name": "Independence Day"
+   }
+  ],
+  "2028": [
+   {
+    "date": "2028-01-01",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2028-01-02",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2028-03-08",
+    "local": "Халықаралық әйелдер күні",
+    "name": "International Women's Day"
+   },
+   {
+    "date": "2028-03-21",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2028-03-22",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2028-03-23",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2028-05-01",
+    "local": "Қазақстан халқының",
+    "name": "Kazakhstan People's Unity Day"
+   },
+   {
+    "date": "2028-05-07",
+    "local": "Отан Қорғаушы күні",
+    "name": "Defender of the Fatherland Day"
+   },
+   {
+    "date": "2028-05-09",
+    "local": "Жеңіс күні",
+    "name": "Great Patriotic War Against Fascism Victory Day"
+   },
+   {
+    "date": "2028-07-06",
+    "local": "Астана күні",
+    "name": "Capital City Day"
+   },
+   {
+    "date": "2028-08-30",
+    "local": "Конституция күні",
+    "name": "Constitution Day"
+   },
+   {
+    "date": "2028-10-25",
+    "local": "Республика күні",
+    "name": "Republic Day"
+   },
+   {
+    "date": "2028-12-16",
+    "local": "Тәуелсіздік күні",
+    "name": "Independence Day"
+   }
+  ],
+  "2029": [
+   {
+    "date": "2029-01-01",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2029-01-02",
+    "local": "Жаңа жыл",
+    "name": "New Year's Day"
+   },
+   {
+    "date": "2029-03-08",
+    "local": "Халықаралық әйелдер күні",
+    "name": "International Women's Day"
+   },
+   {
+    "date": "2029-03-21",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2029-03-22",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2029-03-23",
+    "local": "Наурыз мейрамы",
+    "name": "Nauryz Meyramy"
+   },
+   {
+    "date": "2029-05-01",
+    "local": "Қазақстан халқының",
+    "name": "Kazakhstan People's Unity Day"
+   },
+   {
+    "date": "2029-05-07",
+    "local": "Отан Қорғаушы күні",
+    "name": "Defender of the Fatherland Day"
+   },
+   {
+    "date": "2029-05-09",
+    "local": "Жеңіс күні",
+    "name": "Great Patriotic War Against Fascism Victory Day"
+   },
+   {
+    "date": "2029-07-06",
+    "local": "Астана күні",
+    "name": "Capital City Day"
+   },
+   {
+    "date": "2029-08-30",
+    "local": "Конституция күні",
+    "name": "Constitution Day"
+   },
+   {
+    "date": "2029-10-25",
+    "local": "Республика күні",
+    "name": "Republic Day"
+   },
+   {
+    "date": "2029-12-16",
+    "local": "Тәуелсіздік күні",
+    "name": "Independence Day"
+   }
+  ]
+ }
+}
