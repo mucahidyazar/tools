@@ -15,7 +15,17 @@ export async function GET() {
 
 export async function POST(request: NextRequest) {
   const origin = request.headers.get('origin')
-  if (!origin || origin !== new URL(request.url).origin || request.headers.get('sec-fetch-site') === 'cross-site') {
+  // A TLS-terminating tunnel can make request.url an internal HTTP address.
+  // Trust only the configured public origin, never a caller-supplied forwarded host.
+  let siteOrigin: string
+  try {
+    const site = new URL(process.env.NEXT_PUBLIC_SITE_URL || request.url)
+    if (!['http:', 'https:'].includes(site.protocol)) throw new Error('Invalid site origin')
+    siteOrigin = site.origin
+  } catch {
+    return NextResponse.json({ error: 'Same-origin requests are required.' }, { status: 403, headers })
+  }
+  if (!origin || origin !== siteOrigin || request.headers.get('sec-fetch-site') === 'cross-site') {
     return NextResponse.json({ error: 'Same-origin requests are required.' }, { status: 403, headers })
   }
   if (request.headers.get('content-type')?.split(';')[0].trim() !== 'application/json') {
@@ -60,7 +70,7 @@ export async function POST(request: NextRequest) {
   try {
     const result = getToolUsageStore().recordOpen(value.slug, value.visitId, session.hash)
     const response = NextResponse.json(result, { headers })
-    if (session.fresh) response.cookies.set(TOOL_USAGE_COOKIE, session.cookie, { httpOnly: true, sameSite: 'lax', secure: new URL(request.url).protocol === 'https:', maxAge: 86400, path: '/' })
+    if (session.fresh) response.cookies.set(TOOL_USAGE_COOKIE, session.cookie, { httpOnly: true, sameSite: 'lax', secure: siteOrigin.startsWith('https:'), maxAge: 86400, path: '/' })
     return response
   } catch {
     return NextResponse.json({ error: 'Usage could not be recorded.' }, { status: 503, headers })

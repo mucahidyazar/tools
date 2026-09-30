@@ -17,6 +17,27 @@ function request(body: unknown, extraHeaders: Record<string, string> = {}) {
   })
 }
 
+test('usage origin validation uses the public site origin behind an HTTP tunnel', async () => {
+  const previousOrigin = process.env.NEXT_PUBLIC_SITE_URL
+  process.env.NEXT_PUBLIC_SITE_URL = origin
+  try {
+    const proxied = (extraHeaders: Record<string, string> = {}) => new NextRequest('http://localhost:3000/api/tool-usage', {
+      method: 'POST',
+      headers: { origin, 'Content-Type': 'application/json', ...extraHeaders },
+      // Invalid input stops before storage; a 400 means the origin check accepted it.
+      body: JSON.stringify({ slug: 'not-a-tool', visitId: randomUUID() }),
+    })
+    assert.equal((await POST(proxied())).status, 400)
+    assert.equal((await POST(proxied({ origin: 'https://other.example' }))).status, 403)
+    assert.equal((await POST(proxied({ 'sec-fetch-site': 'cross-site' }))).status, 403)
+    assert.equal((await POST(proxied({ origin: 'null' }))).status, 403)
+    assert.equal((await POST(proxied({ origin: 'http://localhost:3000' }))).status, 403)
+  } finally {
+    if (previousOrigin === undefined) delete process.env.NEXT_PUBLIC_SITE_URL
+    else process.env.NEXT_PUBLIC_SITE_URL = previousOrigin
+  }
+})
+
 test('usage API accepts only same-origin ready-tool increments and returns persistent totals', async () => {
   const directory = mkdtempSync(join(tmpdir(), 'tools-usage-api-test-'))
   const previousDirectory = process.env.TOOLS_DATA_DIR
